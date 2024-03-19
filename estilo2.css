@@ -1,0 +1,14 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.box1 {
+  background: blue;
+  padding: 200px;
+}
+
+.box2 {
+  padding: 200px;
+  background: black;
+}
