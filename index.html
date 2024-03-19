@@ -11,22 +11,31 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body>
+<body class="background">
 
   <nav class="navbar">
-    <ul class="navbar-nav">
-      <a href="">
-        <li>Sobre</li>
+    <div class="container-nav">
+      <a href="index.html" class="logo">
+        <img
+          src="imagens/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjUxMy4zMjg0IiB5PSIxMjkuMjA3MSIgd2lkdGg9IjExOS4zNDMzIiBoZWlnaHQ9IjExOS4zNzE0IiB2aWV3Qm94PSItNTUgMTQ2Ljk1Mzk2NDIzMzM5ODQ0IDQ5OS45Mjg2ODA0MTk5MjE.svg">
       </a>
-      <a href="">
-        <li>Produtos</li>
-      </a>
-      <a href="">
-        <li>Contato</li>
-      </a>
-    </ul>
+      <ul class="navbar-nav">
+        <a href="">
+          <li>inicio</li>
+        </a>
+        <a href="">
+          <li>Sobre</li>
+        </a>
+        <a href="">
+          <li>Produtos</li>
+        </a>
+      </ul>
+      <button>Contato</button>
+    </div>
   </nav>
 
   <div class="container">
@@ -67,7 +76,10 @@
         blanditiis est.</p>
     </div>
     <div class="sidebar">
-      <input class="search" placeholder="Pesquisar">
+      <div class="input-wrapper">
+        <input class="search" placeholder="Pesquisar">
+        <span class="material-symbols-outlined">search</span>
+      </div>
       <div class="noticia"></div>
       <div class="noticia"></div>
     </div>
