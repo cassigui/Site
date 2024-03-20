@@ -20,8 +20,7 @@
   <header id="header">
     <nav class="navbar">
       <a href="index.html" class="logo">
-        <img
-          src="imagens/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjUxMy4zMjg0IiB5PSIxMjkuMjA3MSIgd2lkdGg9IjExOS4zNDMzIiBoZWlnaHQ9IjExOS4zNzE0IiB2aWV3Qm94PSItNTUgMTQ2Ljk1Mzk2NDIzMzM5ODQ0IDQ5OS45Mjg2ODA0MTk5MjE.svg">
+        <img src="imagens/logo.svg">
       </a>
       <ul class="navbar-nav">
         <li id="inicio-link" class="nav-item"><a href="#inicio" class="nav-link">INICIO</a></li>
@@ -69,9 +68,56 @@
 
   <section id="produtos">
 
+    <div class="slider">
+
+      <!-- SLIDES -->
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="slide first">
+          <img src="https://rogeriofreire.blog.br/wp-content/uploads/2018/08/digital.jpg">
+        </div>
+
+        <div class="slide">
+          <img src="https://paraibacriativa.com.br/wp-content/uploads/2021/05/5.jpg">
+        </div>
+
+        <div class="slide">
+          <img src="https://rogeriofreire.blog.br/wp-content/uploads/2021/11/museu-digital-.jpg">
+        </div>
+
+        <div class="slide">
+          <img src="https://paraibacriativa.com.br/wp-content/uploads/2021/05/5.jpg">
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+
+      </div>
+      <!-- FIM SLIDES -->
+
+      <!-- CONTROLLER -->
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+
+
+    </div>
+
   </section>
 
-  <script src="script.js"></script>
+  <script src="navbarScroll.js"></script>
+  <script src="carousel.js"></script>
 </body>
 
 </html>
