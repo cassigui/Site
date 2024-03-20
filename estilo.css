@@ -13,23 +13,28 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #992833;
+  background: #c51f30;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c51f30;
+  background: #f82718;
 }
 
 html {
-  height: 500vh;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+#produtos {
+  height: 100vh;
+  background: rgb(58, 57, 57);
 }
 
 body {
   padding: 0;
   margin: 0;
   background: none;
-  color: white;
 }
 
 h1 {
@@ -39,39 +44,45 @@ h1 {
   font-style: normal;
 }
 
-h1,
-p {
-  margin: 0;
-}
-
 p,
 a {
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  font-weight: 400;
+  font-style: light;
+  color: white;
 }
 
 /* NAVBAR */
-
-.navbar {
-  /* background: rgba(0, 0, 0, 1); */
+header {
+  transition: all 0.4s;
   margin: 0;
   position: fixed;
+  padding: 20px 0;
   width: 100%;
   top: 0;
   z-index: 1;
 }
 
+header.scrolling {
+  background: rgb(0, 0, 0, 0.7);
+  padding: 0;
+  transition: all 0.4s;
+}
+
+
 .navbar button {
-  color: #575757;
-  background: #f1f1f1;
+  background: linear-gradient(to bottom right, #c51f30, #800915);
+  color: white;
+  font-weight: bold;
+  font-size: 0.9;
   box-shadow: none;
+  cursor: pointer;
   border: none;
   padding: 10px 30px;
   border-radius: 10px;
 }
 
-.container-nav {
+.navbar {
   display: flex;
   margin: 0 auto;
   width: 80%;
@@ -79,8 +90,9 @@ a {
   justify-content: space-between;
 }
 
-.container-nav ul {
+.navbar ul {
   padding: 0;
+  gap: 2rem;
 }
 
 .navbar-nav {
@@ -88,24 +100,30 @@ a {
 }
 
 .navbar-nav a {
-  color: white;
   text-decoration: none;
-
   font-size: 20px;
 }
 
+.nav-link.active {
+  color: #f82718;
+  border-bottom: 2px solid #f82718;
+  padding-bottom: 5px;
+}
+
+
+.navbar-nav li {
+  padding: 10px;
+  list-style-type: none;
+}
+
 .navbar-nav a:hover {
-  color: #8f8f8f;
+  color: #c51f30;
 }
 
 .navbar-nav a:active {
   color: #c51f30;
 }
 
-.navbar-nav li {
-  padding: 10px;
-  list-style-type: none;
-}
 
 .logo {
   width: 5%;
@@ -118,83 +136,11 @@ a {
   color: #f1f1f1;
 }
 
-/*SOBRE*/
-.container {
-  margin: 0 auto;
-  width: 80%;
-  display: grid;
-  gap: 30px;
-  grid-template-columns: 3fr 1fr;
-  margin: 40px auto;
-}
-
-.content {
-  display: flex;
-  padding: 0 40px;
-  flex-direction: column;
-  gap: 50px;
-  border-radius: 10px;
-}
-
-.image {
-  float: left;
-  margin-right: 20px;
-  width: 30%;
-}
-
-.responsive-image {
-  display: none;
-  width: 80%;
-  margin: 40px auto 0px auto;
-}
-
-.sidebar {
-  background-color: rgba(0, 0, 0, 0.1);
-  height: 100%;
-  border-radius: 10px;
-  padding: 20px;
-  gap: 20px;
-  display: grid;
-  grid-template-rows: 1fr 5fr 5fr;
-
-}
-
-.input-wrapper {
-  width: 100%;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  background: white;
-  border: 2px solid white;
-  padding: 5px 15px;
-}
-
-.input-wrapper input {
-  background: none;
-  border: none;
-  width: 100%;
-}
-
-.input-wrapper span {
-  cursor: pointer;
-}
-
-.input-wrapper input:focus-visible {
-  outline: none;
-}
-
-.noticia {
-  border-radius: 10px;
-  background: white;
-}
-
 /*Form*/
 
 .form {
   border: 2px solid red;
 }
-
-/*Footer*/
 
 /*BACKGROUND*/
 
@@ -207,11 +153,16 @@ a {
 
 .background-filter h1 {
   position: absolute;
+  text-align: center;
   width: 50%;
   z-index: 1;
   font-weight: 900;
   font-size: 4.5rem;
   text-transform: uppercase;
+}
+
+.background-filter i {
+  color: #f82718;
 }
 
 .background-filter img {
@@ -221,25 +172,43 @@ a {
   height: 100vh;
 }
 
+/* SOBRE */
+
+#sobre {
+  background: rgb(43, 42, 42);
+  padding: 100px;
+}
+
+.wrapper {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper p {
+  font-size: 1.2rem;
+}
+
+.wrapper h1 {
+  font-size: 5rem;
+  margin-left: -100px;
+  color: #f82718;
+}
+
+.container-img {}
+
+.container-img img {
+  width: 100%;
+}
 
 /* @media (max-width: 576px) {} */
 
-@media (max-width: 768px) {
-  .responsive-image {
-    display: block;
-  }
-
-  .image {
-    display: none;
-  }
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 992px) {}
 
-@media (max-width: 1200px) {
-  .container {
-    grid-template-columns: 1fr;
-  }
-}
+@media (max-width: 1200px) {}
 
 @media (min-width: 1400px) {}
