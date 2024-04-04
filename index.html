@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="estilos/home.css">
   <title>Site Institucional</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,8 @@
     rel="stylesheet">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
@@ -25,10 +27,12 @@
       <ul class="navbar-nav">
         <li id="inicio-link" class="nav-item"><a href="#inicio" class="nav-link">INICIO</a></li>
         <li id="sobre-link" class="nav-item"><a href="#sobre" class="nav-link">SOBRE</a></li>
-        <li id="produtos-link" class="nav-item"><a href="#produtos" class="nav-link">PRODUTOS</a></li>
+        <li id="produtos-link" class="nav-item"><a href="#filiais" class="nav-link">FILIAIS</a></li>
         </a>
       </ul>
-      <button>Contato</button>
+      <a href="form.html">
+        <button>Contato</button>
+      </a>
     </nav>
   </header>
 
@@ -43,75 +47,96 @@
   </section>
 
   <section id="sobre">
-    <div class="wrapper">
-      <div class="content-sobre">
-        <h1>SOBRE</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, autem tenetur dolores numquam quia
-          fuga vero iusto consequatur error dolorum eius modi fugit aut aliquam veritatis possimus non id. Et!
-          Rem quae nam ad vel vitae cumque distinctio deserunt neque tenetur in debitis, odit voluptate excepturi velit
-          ullam cum et obcaecati optio, quibusdam facilis iure maxime! Quo libero nam aliquam.
-          Tempore atque eaque non molestias. Possimus officiis unde aperiam libero aliquid perferendis exercitationem,
-          ratione excepturi. Repudiandae sunt voluptatem a tempore laudantium, dolorem provident ea sapiente illum
-          itaque, id, quibusdam nobis?
-          Explicabo velit, modi eveniet ipsum corrupti dolorem. Libero aliquam qui culpa? Doloribus minus, soluta eius
-          distinctio voluptatem rerum quibusdam ipsam, quam reprehenderit aliquam explicabo, quis maiores optio.
-          Deserunt, facilis cumque.
-          Dignissimos qui saepe aspernatur architecto minima libero incidunt, officiis dolorum neque, unde sunt
-          doloribus deleniti iste quidem facilis repudiandae? Earum totam architecto, voluptate dolor provident eaque
-          dolore ullam quos rem!</p>
-      </div>
-      <div class="container">
-        <div class="slider">
-          <!-- SLIDES -->
-          <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
+    <div class="container">
+      <div class="wrapper">
+        <div class="content-sobre">
+          <h1>SOBRE</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, autem tenetur dolores numquam quia
+            fuga vero iusto consequatur error dolorum eius modi fugit aut aliquam veritatis possimus non id. Et!
+            Rem quae nam ad vel vitae cumque distinctio deserunt neque tenetur in debitis, odit voluptate excepturi
+            velit
+            ullam cum et obcaecati optio, quibusdam facilis iure maxime! Quo libero nam aliquam.
+            Tempore atque eaque non molestias. Possimus officiis unde aperiam libero aliquid perferendis exercitationem,
+            ratione excepturi. Repudiandae sunt voluptatem a tempore laudantium, dolorem provident ea sapiente illum
+            itaque, id, quibusdam nobis?
+            Explicabo velit, modi eveniet ipsum corrupti dolorem. Libero aliquam qui culpa? Doloribus minus, soluta eius
+            distinctio voluptatem rerum quibusdam ipsam, quam reprehenderit aliquam explicabo, quis maiores optio.
+            Deserunt, facilis cumque.
+            Dignissimos qui saepe aspernatur architecto minima libero incidunt, officiis dolorum neque, unde sunt
+            doloribus deleniti iste quidem facilis repudiandae? Earum totam architecto, voluptate dolor provident eaque
+            dolore ullam quos rem!</p>
+        </div>
+        <div class="container-slider">
+          <div class="slider">
+            <!-- SLIDES -->
+            <div class="slides">
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
 
-            <div class="slide first">
-              <img src="https://rogeriofreire.blog.br/wp-content/uploads/2018/08/digital.jpg">
+              <div class="slide first">
+                <img src="https://rogeriofreire.blog.br/wp-content/uploads/2018/08/digital.jpg">
+              </div>
+
+              <div class="slide">
+                <img src="https://paraibacriativa.com.br/wp-content/uploads/2021/05/5.jpg">
+              </div>
+
+              <div class="slide">
+                <img src="https://rogeriofreire.blog.br/wp-content/uploads/2021/11/museu-digital-.jpg">
+              </div>
+
+              <div class="slide">
+                <img src="https://paraibacriativa.com.br/wp-content/uploads/2021/05/5.jpg">
+              </div>
+
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+              </div>
+
+            </div>
+            <!-- FIM SLIDES -->
+
+            <!-- CONTROLLER -->
+            <div class="manual-navigation">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
             </div>
 
-            <div class="slide">
-              <img src="https://paraibacriativa.com.br/wp-content/uploads/2021/05/5.jpg">
-            </div>
-
-            <div class="slide">
-              <img src="https://rogeriofreire.blog.br/wp-content/uploads/2021/11/museu-digital-.jpg">
-            </div>
-
-            <div class="slide">
-              <img src="https://paraibacriativa.com.br/wp-content/uploads/2021/05/5.jpg">
-            </div>
-
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-            </div>
 
           </div>
-          <!-- FIM SLIDES -->
-
-          <!-- CONTROLLER -->
-          <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-          </div>
-
-
         </div>
       </div>
     </div>
   </section>
 
-  <section id="produtos">
+  <section id="filiais">
 
   </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-wrapper">
+        <div>
+          <p>
+            © 2024 Museu Digital do SESI. Todos os direitos reservados.</p>
+        </div>
+        <div>
+          <ul>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="navbarScroll.js"></script>
   <script src="carousel.js"></script>
